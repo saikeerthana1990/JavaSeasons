@@ -1,0 +1,796 @@
+
+*******************************************
+Season -1 JAVA 
+Day 1 -11th September  - Monday
+*******************************************						
+
+
+Selenium +  Java 	
+				
+Java 
+
+
+1996 
+
+
+Features of Java : 
+
+1. Simple 
+
+- syntax is based on c++ (easy to program)
+- removed many confusing and rarely used features 
+e.g explicit pointers , operator overloading etc ..
+
+operator overloading 
+
++ - * / % 
+
+2 + 5 = 7
+
+if we overload +  operator as power 
+
+2 + 5 = 32 		
+- Automatic Garbage Collector
+No need to remove unreferenced objects 
+
+------------------------------------------
+2. OOP (Object Oriented Programming)
+- Class
+- Object
+- Encapsulation
+- Polymorphism
+- Inheritance
+- Abstraction 
+
+------------------------------------------
+3. Robust (Strong)
+
+- Java uses Strong Memory management 
+- No pointers ==> avoids security problem 
+- Automatic Garbage Collector 
+- Exception Handling mechanism 
+
+--------------------------------------------
+4. Secure 
+
+in c lang : 
+
+
+hello.c ==> hello.exe
+
+in Java : 
+
+Hello.java ==> Hello.class
+
+JRE (java runtime environment )
+--------------------------------------------
+
+5. Platform Independent
+
+OS operating system ==> not changing single line of code and can be run in any OS
+--------------------------------------------
+6. Architectural Neutral 
+
+Micro processor 
+--------------------------------------------
+7. Portable 
+
+Computer Architecture : 
+
+3 types IBM
+		APPLE
+		SOLARIS 
+
+WORA : Write Once Run Anywhere 
+
+
+=========================================================================
+
+JAVA / JSE / jdk
+JSE = Java Standard Edition or Basic Java or Core JAVA
+jdk = java development kit 
+
+how to install jdk ? 
+
+
+https://www.oracle.com/in/java/technologies/downloads/
+
+
+jdk 11 : 
+
+click on jdk-11.0.20_windows-x64_bin.exe 
+
+
+*******************************************
+Season -1 JAVA 
+Day 2 -12th September  - Tuesday
+*******************************************		
+
+
+
+Configuration of Java : 
+
+using Environment Variables 
+
+
+Variable Name : JAVA_HOME 
+Variable value : path till jdk folder means C:\Program Files\Java\jdk-11
+
+Edit on Path Variable which already exists in System variables :
+
+path : click on new and paste the path till bin folder 
+
+means  C:\Program Files\Java\jdk-11\bin
+
+To check configurtion:
+
+go to command prompt and give the below command
+java -version
+
+C:\Users\Riyaz>java -version
+java version "11.0.20" 2023-07-18 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.20+9-LTS-256)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.20+9-LTS-256, mixed mode)
+
+
+									
+									jdk (java development kit)
+									
+									
+									
+									
+				lib							bin							jre 
+
+
+lib : 
+Library (predefined stuff by Java Community )
+
+
+
+							lib
+							 |
+					collection of jars or API  (~ to .zip folders)
+							 |
+							 
+					collection of packages (~ to folders)
+								|
+					-------------------------------
+					|							   |
+				Classes							Interfaces
+							 
+		variables	  methods				Constants			abstract methods
+											/ Fields
+									
+									
+									
+bin or tools :
+
+bin means binaries 
+
+javac to compile a java program 
+
+syntax : 
+
+javac FileName.java									
+									
+java to excute a compiled java program
+
+syntax :
+
+java FileName								
+									
+----------------------------------
+JRE : Java Runtime Environment
+
+- pre execution  of code 
+- collect info about current OS 
+- .class file (BC) to machine understandable format 
+
+
+										JVM (Java Virtual Machine) 
+										
+										
+					CLSS				EE						GC	
+
+								Interpreter  JIT			Mark	Sweep
+										     Compiler
+										
+										
+CLSS : Class loader Subsystem 
+
+- Loading
+- Linking 
+- Initialization
+
+EE : Execution Engine
+
+JIT Compiler (Just In time Compiler ) 
+
+loops ( for , while , etc )
+
+GC : 
+
+deallocation 
+
+Mark - will identify object or variables that are unused or used 
+
+Sweep - will clean up memory 
+
+--------------------------------------------
+Structure of Java Program 
+
+4 Sections 
+
+1. Documentation Section
+
+2. package Section	
+
+3. import Section
+
+4. class / interface Section								
+										
+										
+----------------------------------
+1. Documentation Section
+----------------------------------
+comments 
+
+i) single line comment  // 
+
+ii) multiline comment
+
+/* kjyiiuyiuy
+  uytuytuytuytu
+  ytuytuytuyt
+*/
+
+*******************************************
+Season -1 JAVA 
+Day 3 -13th September  - Wednesday
+*******************************************			
+
+----------------------------------
+2. package Section
+----------------------------------	
+
+package means folder 
+
+for logical grouping 
+
+syntax : 
+
+package package-name;
+
+package sep13th;
+
+package sep13th.morning;
+
+package sep13th.afternoon; 
+
+java.util
+
+----------------------------------
+3. import Section
+----------------------------------
+
+import package-name.*; 
+import package-name.ClassName;
+import static package-name.ClassName.*;
+
+import java.util.*;  ==> not preferef ==> Readability is poor 
+import java.util.Scanner;
+
+--------------------------------
+4. class / interface Section	
+--------------------------------
+
+syntax : 
+
+
+access-specifier access-modifier class ClassName 
+{
+
+//variables
+
+//methods 
+
+}
+
+access-specifier ==> access label 
+
+4 types 
+
+public 
+protected
+private
+<default> 
+
+access-modifier ==> tells the behaviour 
+
+static or final or abstract or <default>
+
+if you want execution of class you should have main method 
+
+
+public static void main(String[] args)
+{
+
+
+
+}
+
+--------------------------------------
+Naming Convention in Java 
+--------------------------------------
+
+							collection of packages (~ to folders)
+								|
+					-------------------------------
+					|							   |
+				Classes							Interfaces
+							 
+		variables	  methods				Constants			abstract methods
+											/ Fields
+											
+											
+packages : all lower case 
+
+e.g 
+
+java.util
+
+sep13th
+
+org.openqa.selenium 
+
+
+Classe / Interface : Title Case 
+
+
+RamaKrishna  RK 
+
+e.g 
+
+Scanner 
+
+FileInputStream
+
+ValidateLogin
+
+											
+variables / methods : Camel Case  CC =  LC + TC  
+
+
+x 
+
+netSalary
+
+costOfItem
+
+for methods same as variables but you will see ( 
+
+nextInt()
+
+main(
+
+
+Constants/Fields : all Upper case 
+
+
+PI = 3.14 
+
+MAX_LIMIT = 10000
+											
+*******************************************
+Season -1 JAVA 
+Day 4 -13th September  - Thursday
+*******************************************	
+
+variable : 
+
+reference given to some memory location or data 
+
+int x=10
+
+
+syntax : 
+
+
+access-specifier access-modifier dataType 	variableName;	==> variable declaration
+
+access-specifier access-modifier dataType 	variableName = value ; ==> variable declaration and assignment 
+
+
+Variables are classified according to the location and behaviour 
+
+
+									Variables
+									
+									
+									
+				Local					Instance					Static 
+
+-------------------------------
+Java Memory Blocks 
+-------------------------------
+
+1. Class Area /Method Area 
+- static variables
+- static methods 
+- .class files 
+
+2. Heap Area (Dynamic Memory allocation)
+
+- objects 
+- Arrays 
+
+3. Java Stack Area 
+
+- local variables 
+- expressions 
+- current running logic 
+
+int x=10;
+int y=20;
+
+x+y ==> 30 
+
+4. String Constant Pool Area (SCPA)
+
+String s1="LiveTech";
+
+----------------------------------------
+
+Local : 
+
+1. Def	: variable which are declared inside a method 
+
+2. when 
+this variable is getting ?
+
+only when that method is called 
+
+
+3. where 
+is memory alloacated ?
+
+Java Stack Area 
+
+4. what is calling style ?
+
+variableName itself 
+
+5. Scope of life time 	
+
+till the end of method 			
+									
+Note : 
+
+It's the programmers responsibity to initialize some value for local variable
+
+VariablesDemo1.java:13: error: variable y might not have been initialized
+System.out.println(y);
+                   ^
+1 error									
+
+-------------------------------------------------------
+Instance Variables 
+
+
+1. Def	: variables which are declared inside a class but outside of method/s 
+
+2. when 
+this variable is getting ?
+
+only during object creation 
+
+ClassName objectName=new ClassName();
+
+3. where 
+is memory alloacated ?
+
+Heap Area 
+
+4. what is calling style ?
+
+objectName.variableName;
+
+5. Scope or life time 	
+
+till the last usage of object in program 
+
+--------------------------------------------------
+Static Variable 
+
+
+1. Def	: variables which are declared inside a class but outside of method/s  having keyword static 
+
+2. when 
+this variable is getting ?
+
+during .class file loading 
+
+3. where 
+is memory alloacated ?
+
+class Area / Method Area 
+
+4. what is calling style ?
+
+ClassName.variableName;
+
+5. Scope or life time 	
+
+till end of program 
+
+									
+*******************************************
+Season -1 JAVA 
+Day 5 -14th September  - Friday
+*******************************************	
+
+-----------------------------
+Data Types in JAVA
+-----------------------------
+
+Java is Strongly typed language 
+
+i=10 like python , REXX etc ..	
+
+int i=10  in Java , C , C++ etc ..
+
+									
+														
+														
+										Data Types 
+										
+										
+										
+				Primitive Data Types(8)							Non-Primitives (Arrays , strings , object etc..)						
+										
+														
+byte 
+short
+int
+long
+float
+double
+char
+boolean
+
+														
+---------------------------------
+How to download eclipse :
+
+is an IDE (Integrated Development Environment)
+
+Eclipse , IntelliJ Idea , net beans , VS code etc ...
+
+https://www.eclipse.org/downloads/
+
+Click on "Download Packages " 
+
+under "MORE DOWNLOADS" in rigth hand side 
+
+click on below link 
+
+"Eclipse 2021-09 (4.21)"
+
+under "Eclipse IDE for Enterprise Java and Web Developers" 
+
+click on "
+Windows x86_64"														
+														
+														
+*******************************************
+Season -1 JAVA 
+Day  -20th September  - Wednesday
+*******************************************		
+
+-------------------------------------
+Methods in Java 
+-------------------------------------													
+
+method : 
+
+a set of statement or instructions	to perform some task 
+
+Need or advantages of method :
+
+1. reusability
+2. reducing code redundancy
+3. code clarity
+4. length of program is reduced 
+5. code debugging becomes easy
+
+syntax :
+
+access-specifier access-modifier return-type methodName(arguments or paramters)
+{
+//statements 
+
+//local declarations 
+
+return statement;  // mandatory if the return-type is other than void 
+
+}
+
+														
+									Methods
+
+					Non-static					Static
+					
+														
+Non-static : 
+
+
+1. Def	: 
+
+methods defined without static keyword 
+
+keywords : <default> , abstract , final etc ..
+
+2. when 
+this methods are getting memory?
+
+during object creation
+
+3. where 
+is memory alloacated ?
+
+Heap Area
+
+4. what is calling style ?
+
+objectName.methodName();
+
+5. Scope or life time 	
+
+till the last usage of object in the program
+												
+
+																				
+????????????????????????????????????????????
+
+Assignment 
+
+
+create a non-static method to 
+calcuate Simple Interest 
+
+SI = P * T * R /100 ;
+
+
+????????????????????????????????????????????
+													
+														
+*******************************************
+Season -1 JAVA 
+Day  -21st September  - Thursday
+*******************************************															
+														
+------------------------------------
+Static Methods
+
+1. Def	: 
+
+methods having keyword static 
+
+2. when 
+this  is getting ?
+
+during class loading 
+
+3. where 
+is memory alloacated ?
+
+in Class Area/ Method Area 
+
+4. what is calling style ?
+
+ClassName.methodName
+
+5. Scope or life time 	
+														
+till the end of program														
+														
+------------------------------
+OOP - Object Oriented Programming
+
+POP - Procedure Oriented programimg ( c , COBOL , etc ..)
+
+methodology for developing and maintaining apps 
+
+Rules or Concepts of OOP :
+
+- Object
+- Class
+- Encapsulation
+- Polymorphism
+- Inheritance
+- Abstraction	
+
+Object : anything that exits is an object 
+
+Object will have 3 characteristics 
+
+State : data or attributes that can describe an object
+
+variables
+
+Behaviour : tasks or action that be performed by object 
+
+methods 
+
+Identity : it's a unique ID used by JVM to identify objects 
+
+Class :
+
+a blueprint or template from which you can create an object
+
+----------------------------------
+Object Creation Techniques
+----------------------------------
+
+1. using new operator/keyword
+
+syntax 
+
+ClassName objectName=new ClassName();
+-----------------------------------------
+2. using static factory method ( SFM)
+
+ClassName objectName=ClassName.methodName();
+
+By class in Selenium 
+
+some static methods in that class 
+
+id():By 
+name (): By 
+
+By obj=By.id();
+-----------------------------------------
+3. Non Static Factory Method (NSFM)
+
+this technique will be used if there is some dependency 
+
+syntax : 
+
+
+ ClassName1 object1= new ClassName1();
+ 
+ ClassName2 object2=object1.methodName();
+ 
+XSSFWorkbook 
+
+getSheet():XSSFSheet 
+
+XSSFSheet
+
+ XSSFWorkbook wb=new XSSFWorkbook();
+ XSSFSheet ws=wb.getSheet();
+
+----------------------------------------------------
+4. using clone method 
+
+used by developers 
+
+------------------------------------------------------
+5. using literals 
+
+String s="Live Tech";
+
+-------------------------------------------------------
+6. using deserialization (no syntax)
+
+used by JVM to create object during exceptions 
+
+
+
+
+
+
+
+
+								
