@@ -786,9 +786,33 @@ String s="Live Tech";
 
 used by JVM to create object during exceptions 
 
+*******************************************
+Season -1 JAVA 
+Day  - 22nd  September  - Friday
+*******************************************															
+												
+-------------------------
+1. Encapsulation
+-------------------------
+
+Encapsulation in Java is a process of wrapping code(methods) and data(variables) together into a single unit,
+for example, a capsule which is mixed of several medicines.
+
+Every class is encapsulated . 
 
 
+Encapsulation = Data Hiding + Abstraction 
 
+
+Tightly Encapsulation : 
+
+we need to have access-specifier as private 
+
+The field Bank.balance is not visible
+
+this : is a keyword cum operator
+
+which will replace the current calling object reference 
 
 
 
