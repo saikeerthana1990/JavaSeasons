@@ -814,7 +814,110 @@ this : is a keyword cum operator
 
 which will replace the current calling object reference 
 
+*******************************************
+Season -1 JAVA 
+Day  - 23rd  September  - Saturday
+*******************************************	
 
 
 
-								
+Flow control or Control Flow in Java 
+
+
+1. Decisssion Making or Selection statements
+if else
+switch
+
+
+2. loops or Iterative statements
+i) for
+ii) while 
+iii) do while 
+iv) for-each 
+
+
+3.jump or Transfer Statements
+
+1) break
+ii) continue
+iii) return
+iv) try catch finally 
+
+
+---------------------------------------------
+1. Decisssion Making or Selection statements
+---------------------------------------------	
+
+salary upto 30000	-- 10%
+
+salary > 30000 and salary <=50000 --- 20 %
+
+salary > 50000 --- 30 %
+
+
+if(condition which gets boolean )
+{
+// condition is met means true 
+-----
+-----
+}		
+else
+{
+  //condition is not met means false
+}		
+
+if
+
+if else
+
+if -  else if -  else  (chain of if )
+
+if - (if else ) else ( if else)  (nested if)
+
+
+
+
+
+Scanner Class :
+
+	Scanner input=new Scanner(System.in);
+	int salary = input.nextInt();
+	
+
+
+next():String
+nextLine()
+
+
+nextByte() : byte
+nextShort() :short
+nextInt() : int
+nextLong() : long
+nextFloat(): float
+nextDouble(): double
+nextBoolean(): boolean
+
+
+switch(expression)
+{
+case value1 :   statement/s
+                 break;
+case value2 :   statement/s
+                 break;
+				 
+default :  statement/s				 
+
+}
+
+switch will accept 
+
+byte short int char String 
+
+
+switch will not accept 
+
+boolean float double long 
+
+
+
+			 
