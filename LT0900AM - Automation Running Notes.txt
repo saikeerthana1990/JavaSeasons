@@ -920,4 +920,203 @@ boolean float double long
 
 
 
+*******************************************
+Season -1 JAVA 
+Day  - 25th  September  - Monday
+*******************************************	
+			 
+------------------------------
+2. Polymorphism
+-------------------------------
+
+poly means many
+
+morphm means forms 
+
+
+The method add(int, int) in the type Sum is not applicable for the arguments (double, double)
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+The method add(int, int) in the type Sum is not applicable for the arguments (long, long)
+
+	at sep25th.PolyDemo1.main(PolyDemo1.java:11)
+
+			 
+			 
+*****
+without Polymorphism
+
+public void add(int x,int y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	public void addDouble(double x,double y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	public void addLong(long x,long y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	public void addFloat(float x,float y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}			 
+			 
+*****************
+with Polymorphism
+
+public void add(int x,int y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	public void add(double x,double y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	public void add(long x,long y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	public void add(float x,float y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+			 
+										Polymorphism
+							
+				static										Dynamic
+				or											or
+				Compile time								Runtime
+				or											or
+				Early Binding								Late Binding
+				
+				
+Satic Polymorphism :
+
+can be achived by 
+
+1) Operator Overloading ( java doesn't support this)
+2) Method Overloading
+
+terminology :
+
+
+Method Signature : methodName + arguments
+
+
+
+	i)   same method name having different data types 
+	ii)  same method name  and having variance in no of arguments
+	iii) same method name with change in order of datatypes (sometimes it will not work, we don't use this)
+	
+	public void setDetails(int rollNo, String sNa)
+	{
+	
+	}
+	
+	public void setDetails( String sNa,int rollNo,)
+	{
+	
+	}
+	
+---------------------
+Clock
+
+9  		09:00:00
+9,28 	09:28:00
+9,28,55 09:28:55
+
+PrintStream (C) : 4 methods 
+
+
+println : this will print and moves the cursor to next line 
+
+print : this will print and cursor stays in same line 
+
+* * * * *
+* * * *
+* * *
+* *
+*
+
+printf : this is to format your o/p
+
+printf(String, Object...)  
+
+format :  this is to format your o/p 
+
+
+format(String, Object...)
+							
+			 
+???????????????????????????????????????????
+Assignment 
+Create some class 
+
+BirthDay
+
+use method overloading 
+
+setBirthDay(25)
+
+25-00-0000
+
+
+setBirthDay(25,9)
+
+25-09-0000
+
+
+setBirthDay(25,9,1989)
+
+25-09-1989
+
+???????????????????????????????????????????????
+			 
+			 
+-------------------------
+Constructor 
+-------------------------
+
+syntax :
+
+access-specifier methodName(arguments)
+{
+
+}
+
+Rules :
+
+1. Constructor should have same name as Class (Case sensitive)
+2. Constructor shouldn't have return-type 
+
+Q . what happens if we have return-type 
+
+Ans : nothing happens , just it will be treated as normal method 
+instead of constructor 
+
+3. 	Constructor shouldn't have access-modifier
+
+Q. what happens if we have modifier
+
+Ans : compilation error
+
+Illegal modifier for the constructor in type Sample; only public, protected & private are permitted
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
 			 
