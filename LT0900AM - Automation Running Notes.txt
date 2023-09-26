@@ -1108,9 +1108,23 @@ Ans : compilation error
 
 Illegal modifier for the constructor in type Sample; only public, protected & private are permitted
 			 
+
+*******************************************
+Season -1 JAVA 
+Day  - 26th  September  - Tuesday
+*******************************************				 
 			 
-			 
-			 
+Constructor Overloading :
+
+
+---------------------------
+3. Inheritance
+---------------------------
+
+
+	
+
+	
 			 
 			 
 			 
