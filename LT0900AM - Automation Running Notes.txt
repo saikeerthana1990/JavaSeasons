@@ -1131,9 +1131,48 @@ Method Signature = Method Name + arguments
 Method Overriding :
 
 
-
+*******************************************
+Season -1 JAVA 
+Day  - 28th  September  - Thursday
+*******************************************	
 
 		 
+----------------------------
+4.Abstraction
+----------------------------
+
+
+Abstract					
+
+
+
+							Abstraction
+							
+							
+							
+			Abstract class						Interface
+			(0 to 100 %)						( 100 % abstraction)
+			
+abstract method :
+
+access-modifier abstract return-type methodName(arguments);			
+							
+			 
+Note : we cannot create an object for Abstract class
+
+Cannot instantiate the type Numbers
+
+			 
+							
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
 			 
 	
 
