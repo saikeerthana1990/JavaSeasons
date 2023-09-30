@@ -1,0 +1,76 @@
+*******************************************
+Season -1 Java   
+Day  - 30th  September  - Saturday
+*******************************************	
+
+Flow control or Control flow statements(Cont ..)
+
+
+-------------------
+for 
+
+syntax :  
+
+for(intialization;condition;increment or decrement)
+{
+
+
+}
+
+--------------------------
+
+while 
+
+
+syntax :
+
+
+while(condition)
+{
+
+
+
+}
+
+Scanner Class :
+
+
+8 primitive 
+
+byte   nextByte()
+short  nextShort()
+int	   nextInt()
+long   nextLong()
+float  nextFloat()
+double nextDoubele()
+boolean nextBoolean()
+char    no direct method in Scanner class 
+
+To scan character from console :
+
+next():String
+
+		Scanner input=new Scanner(System.in);
+			
+			char ch=input.next().charAt(0);
+			
+			
+----------------------------------------------------------
+Arrays:
+
+int x=10;
+
+int y=20;
+
+int z=30;
+
+--------------------------------------------------
+
+for each loop or enhanced for loop			
+
+for(datatype someVaribale:arrayNameorCollection)
+{
+someVaribale
+
+}
+
