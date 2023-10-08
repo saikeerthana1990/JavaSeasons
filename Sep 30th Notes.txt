@@ -74,3 +74,56 @@ someVaribale
 
 }
 
+*******************************************
+Season -1 Java   
+Day  - 02nd October   Monday
+*******************************************
+
+Arrays :
+
+declaration :
+
+datatype[] arrayName ;
+
+assignement or intialization:
+
+arrayName = {value1, value2 ...};
+
+
+using new operator declaration and initialization :
+
+datatype[] arrayName=new datatype[size or length or no of items];
+
+
+Arrays :
+
+
+will store same/similar datatype or homogenous 
+
+length is fixed 
+
+def : it is collection of homogenous datatype items having fixed length
+
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at sep30th.ArraysDemo3.main(ArraysDemo3.java:23)
+
+
+2-dimensional array :
+
+think of Matrix from 10th standard 
+
+--------------------------------------------------
+
+String :
+
+predefined class in java 
+
+String Constant Pool Area : 
+
+we can create String objects using Literals 
+
+
+ClassName objectName="value";
+
+String str="Live Tech";
+
