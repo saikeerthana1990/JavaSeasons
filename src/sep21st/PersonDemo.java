@@ -11,6 +11,7 @@ public class PersonDemo {
 		System.out.println(p1.phone);
 		p1.greet();
 		
+			
 		p1.name="SivaMani";
 		p1.age=35;
 		p1.phone=9848022338L;
